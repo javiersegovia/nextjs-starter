@@ -1,0 +1,65 @@
+{
+  "name": "pxk",
+  "private": true,
+  "engines": {
+    "node": ">=16.13.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:lint": "eslint . --ext ts --ext tsx --ext js --fix",
+    "lint:type-check": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "babel-plugin-twin": "^1.0.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "twin.macro": "^2.8.2"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "17.0.0",
+    "@types/react": "17.0.37",
+    "@types/tailwindcss": "^2.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "babel-plugin-macros": "^3.1.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-testing-library": "^5.0.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwind": "^2.2.12",
+    "tailwindcss": "2.2.19",
+    "typescript": "4.5.4"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  }
+}
